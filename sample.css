@@ -1,0 +1,227 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    
+}
+body{
+    background-color:#b0c4dee2 ;
+}
+
+.bdr{
+    border:dotted red;
+    width: 100%;
+}
+.header{
+    height: 100px;
+}
+.company-logo{
+    gap: 10px;
+    width: 30%;
+    
+}
+.company-logo img{
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    padding-left: 5px;
+     
+}
+.company-logo h3 {
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+    
+.company-name{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.profile-wel-msg{
+    align-items: center;
+    width: 100%;
+}
+.main-section{
+    height: 740px;
+    
+}
+.menu{
+    max-width: 250px;
+    margin-top: 20px;
+}
+.nav-tabs{
+    display: inline-block;
+}
+.nav-tabs a{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+   justify-content: flex-start;
+   color: black;
+   
+    
+}
+.nav-tabs li {
+    list-style-type: none;
+  
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.main-div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.876);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+.table-heading{
+    min-height: 120px;
+    padding: 10px;
+}
+.add-btn{
+    gap: 10px;
+}
+.btn-size {
+    height: 40px;
+}
+.table-details{
+    
+    height: 550px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.three-dot-icon{
+   padding-top: 5px;
+   color: silver;
+   margin-right: 20px;
+}
+
+.footer{
+    height: 60px;
+}
+
+/* modal  */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    /* background-color:  #fefefe69; */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #d85a5a;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #dd1e1e;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .salesCalForm-head h4{
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+  }
+  .fill-boxs-x{
+    width:200px ;
+    margin-left: 45px;
+  }
+  .fill-boxs{
+    width:200px ;
+    margin-left: 10px;
+  }
+  .op-balnce{
+    color: red;
+  }
+ 
+
+hr{
+  width: 80%;
+}a{
+    cursor: pointer;
+    color: #ed2e21;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+/* alert total sale is more than the revenue*/
+.custom-alert {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 400px;
+    
+    
+    top: -140px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:transparent;
+}
+.custom-alert-content {
+    background-color: #fefefe69;
+    margin-left: 30rem;
+    margin-top: 20rem;
+    padding: 20px;
+    border: 1px solid #888888ca;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 8px;
+    position: relative;
+
+}
+.close_msg {
+    position: relative;
+    top: -25px;
+    right: -10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close_msg:hover,
+.close_msg:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#alertMessage {
+    color: #eb1616;
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #cee5eb, #f6f5f2);
+}
+
+.inner-box {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    /* background-color: #ffffff09; */
+    background: linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #2773a5;
+    /* border: 2px solid black; */
+    z-index: 2;
+}
+header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.hd-img{
+    width: 100px;
+    padding-right: 20px;
+    
+}
+
+.signin-header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.signin-header p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.signin-body {
+    margin: 20px 0;
+}
+
+.signin-body p {
+    margin: 10px 0;
+}
+
+.signin-body p label {
+    display: block;
+    font-weight: bold;
+}
+
+.signin-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.signin-body p input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signin-body p input[type="submit"]:hover {
+    background-color: #2773a5;
+}
+
+.signin-footer p {
+    color: #555;
+    text-align: center;
+}
+
+.signin-footer p a {
+    color: #2773a5;
+}
+.help-line{
+    margin-top: 20px;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff33, #ffffffff);
+    position: absolute;
+}
+
+.c1 {
+    top: 100px;
+    left: 30%;
+}
+
+.c2 {
+    bottom: 200px;
+    right: 40%;
+}
+
+
+
+  .altModal{
+    display: none;
+    justify-items: center;
+    background-color: #d94c4ceb;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    /* border: 1px solid #888; */
+    width: 80%;
+  }
+  .alertContainer:hover{
+    background-color: #e7d7d7;
+    
+  }
+  .close {
+    position:absolute;
+    right: 0x;;
+    left: 83%;
+    top: 21%;
+    color: #261515b2;
+    
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+  .close:hover,
+  .close:focus {
+    color: #0a0909;
+    text-decoration: none;
+    cursor: pointer;
+  }
