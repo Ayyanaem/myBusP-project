@@ -51,6 +51,8 @@ function check(form) {
 
 var modal = document.getElementById("salsCalForm");
 var btn = document.getElementById("calculate");
+let btnP = document.getElementById("btnP");
+
 
  var span = document.getElementsByClassName("close")[0];
 
@@ -73,6 +75,9 @@ var btn = document.getElementById("calculate");
 
  
 
+
+ 
+
  
 
 // total sales calculate data collection form
@@ -84,17 +89,20 @@ var selectedRow = null
 function onFormSubmit() {
   if (validate()) {
       var formData = readFormData();
+      
       if (selectedRow == null)
           insertNewRecord(formData);
       else
           updateRecord(formData);
       resetForm();
   }
- 
-
+    
+  
   
 
 }
+
+
 
 function alertMsg(){
   let alertBox =
@@ -107,12 +115,14 @@ function alertMsg(){
   
 
   if (parseFloat(cell4.innerHTML) > parseFloat(cell8.innerHTML)){
-    alert_Message_container.innerHTML = 'Income is lessthen Total Sales'
+    alert_Message_container.innerHTML = 'Income is less then Total Sales'
     alertBox.style.display = "block";
            close_img.onclick = function () {
            alertBox.style.display = "none";
-           window.onclick = function(){
-            alertBox.style.display = "none";
+           window.onclick = function(event){
+            if (event.target == alertBox){
+              alertBox.style.display = "none";
+           }
            }
     
     
@@ -120,7 +130,7 @@ function alertMsg(){
  
 }
 }
-
+ 
 // defined the value of table row index 
 let index = 1;
 
@@ -135,7 +145,7 @@ function readFormData() {
     formData["bank"] = parseFloat( document.getElementById("bank").value);
     formData["drawer"] = parseFloat( document.getElementById("drawer").value);
     formData["opening"] = parseFloat(document.getElementById("opening").value);
-    formData["totalIncome"] = (formData["bank"] + formData["drawer"]) -formData["opening"];
+    formData["totalIncome"] = (formData["bank"] + formData["drawer"]) - formData["opening"]; //totla income calculation (bank + draawer) - opening 
     return formData;
 }
 
@@ -166,8 +176,9 @@ function insertNewRecord(data) {
     cell8.innerHTML = data.totalIncome;
     
     cell9 = newRow.insertCell(9);
-    cell9.innerHTML = `<a onClick="onEdit(this)">Edit</a>
-                       <a onClick="onDelete(this)">Delete</a>`;
+    cell9.innerHTML = `<button  class=" btn btn-warning" onClick="onEdit(this)">Edit</button>
+
+                       <button class=" btn btn-danger mx-3" onClick="onDelete(this)">Delete</button>`;
 }
 
 function resetForm() {

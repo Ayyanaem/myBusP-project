@@ -105,33 +105,38 @@
                         <div id="salsCalForm" class="modal w-100">
 
                             <!-- sales calculate form  -->
-                            <div class="modal-content w-50">
+                            <div class="modal-content w-25">
         
-                              <form id="salesCalForm" class="form-control " onsubmit="event.preventDefault();onFormSubmit(); alertMsg() " autocomplete="off">
-                                <span class="close">&times;</span>
+                              <form id="salesCalForm" class="form " onsubmit="event.preventDefault();onFormSubmit(); alertMsg();" autocomplete="off">
+                                <span class="close btn-close " aria-label="Close"></span>
                                     <header class="salesCalForm-head">
                                         <h2>Sales Calculator</h2>
                                     </header>
                                     
-                                    <label for="pos" class="form-lable" >Pos</label> <label class="validation-error hide " id="posValidationError">This field is required</label>
-                                    <input type="number" class="form-control inputNextFild" id="pos" name="pos" >
+                                    <label for="pos" class="form-lable" >Pos</label>
+                                     <label class="validation-error hide " id="posValidationError">This field is required</label>
+                                    <input type="number" class="form-control inputNextFild val w-60" id="pos" name="pos" >
 
                                     <label for="tapp" class="form-lable" >T-App</label>
-                                    <input type="number" class="form-control inputNextFild" id="tapp" name="tapp"required >
+                                    <label class="validation-error hide " id="posValidationError">This field is required</label>
+                                    <input type="number" class="form-control inputNextFild val w-60" id="tapp" name="tapp" >
 
                                     <label for="bank" class="form-lable" >Bank</label>
-                                    <input type="number" class="form-control inputNextFild" id="bank" name="bank"required >
+                                    <label class="validation-error hide " id="posValidationError">This field is required</label>
+                                    <input type="number" class="form-control inputNextFild val w-60" id="bank" name="bank">
 
                                     
 
                                     <label for="drawer" class="form-lable">Drawer</label>
-                                    <input type="number" class="form-control inputNextFild" id="drawer" name="drawer"required>
+                                    <label class="validation-error hide " id="posValidationError">This field is required</label>
+                                    <input type="number" class="form-control inputNextFild val w-60" id="drawer" name="drawer">
 
 
                                     <label for="opening" class="form-lable">Opening</label>
-                                    <input type="number" class="form-control inputNextFild" id="opening" name="closing"required >
+                                    <label class="validation-error hide " id="posValidationError">This field is required</label>
+                                    <input type="number" class="form-control inputNextFild val w-60" id="opening" name="closing" >
 
-                                    <button type="submit" class="btn btn-primary" >Calculate</button>
+                                    <button type="submit" class="btn btn-primary"  id="btnp"  >Calculate</button>
 
                                   
 

@@ -108,7 +108,7 @@ body{
 
 /* modal  */
 .modal {
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -129,22 +129,22 @@ body{
     border: 1px solid #888;
     
   }
+ 
+ #btnp{
+    margin-top: 10px;
+    padding-top: 5px;
+ }
   
   /* The Close Button */
   .close {
-    color: #d85a5a;
     float: right;
-    font-size: 28px;
+    font-size: 15px;
     font-weight: bold;
+  
     
   }
   
-  .close:hover,
-  .close:focus {
-    color: #dd1e1e;
-    text-decoration: none;
-    cursor: pointer;
-  }
+ 
 
 
   .salesCalForm-head h4{
@@ -224,4 +224,11 @@ label.validation-error{
 }
 #alertMessage {
     color: #eb1616;
+}
+
+.edit-del-btn{
+    color: rgba(255, 0, 0, 0.576);
+}
+.edit-del-btn:hover{
+    color: red;
 }
